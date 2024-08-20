@@ -1,0 +1,16 @@
+{
+    "presets": [["@babel/preset-env", { "targets": { "node": "current" } }]],
+    "env": {
+        "dev": {
+            "plugins": [
+                [
+                    "./src/prefix-function-names-plugin.js",
+                    {
+                        "prefix": "my",
+                        "skipPrefixed": true
+                    }
+                ]
+            ]
+        }
+    }
+}
